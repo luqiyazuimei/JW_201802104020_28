@@ -1,0 +1,308 @@
+{
+	"id": "d61c5df2-82b3-430e-be13-e917aeeb5b14",
+	"name": "TeacherTest",
+	"allTests": [],
+	"timestamp": "2019-11-19T15:22:38.053Z",
+	"collection_id": "9b29a98a-01f6-48f1-84ab-d362263a03e8",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "9b29a98a-01f6-48f1-84ab-d362263a03e8",
+		"name": "TeacherTest",
+		"order": [
+			"06571822-ef3f-491b-b3a4-68eba8225ecb",
+			"595258b3-f2d3-49ee-945b-5836532b669f",
+			"89dff97e-9f11-4183-ac70-6e55ded060fe",
+			"4c225580-3b87-4319-a2bd-f4dfa9013843",
+			"aee3f577-1378-4faf-84ae-bc3ce2af4546"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "GET Teacher findAll",
+			"id": "06571822-ef3f-491b-b3a4-68eba8225ecb",
+			"url": "http://localhost:8080/teacher.ctl",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches 博士后": true
+			},
+			"testPassFailCounts": {
+				"Body matches 博士后": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"21"
+			],
+			"allTests": [
+				{
+					"Body matches 博士后": true
+				}
+			],
+			"time": "21",
+			"totalRequestTime": "21",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET Teacher find",
+			"id": "595258b3-f2d3-49ee-945b-5836532b669f",
+			"url": "http://localhost:8080/teacher.ctl?id=1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches 博士后": true
+			},
+			"testPassFailCounts": {
+				"Body matches 博士后": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"29"
+			],
+			"allTests": [
+				{
+					"Body matches 博士后": true
+				}
+			],
+			"time": "29",
+			"totalRequestTime": "29",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST Teacher add",
+			"id": "89dff97e-9f11-4183-ac70-6e55ded060fe",
+			"url": "http://localhost:8080/teacher.ctl",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches add successfully": true
+			},
+			"testPassFailCounts": {
+				"Body matches add successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"107"
+			],
+			"allTests": [
+				{
+					"Body matches add successfully": true
+				}
+			],
+			"time": "107",
+			"totalRequestTime": "107",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT Teacher update",
+			"id": "4c225580-3b87-4319-a2bd-f4dfa9013843",
+			"url": "http://localhost:8080/teacher.ctl",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches update successfully": true
+			},
+			"testPassFailCounts": {
+				"Body matches update successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"28"
+			],
+			"allTests": [
+				{
+					"Body matches update successfully": true
+				}
+			],
+			"time": "28",
+			"totalRequestTime": "28",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE Teacher delete",
+			"id": "aee3f577-1378-4faf-84ae-bc3ce2af4546",
+			"url": "http://localhost:8080/teacher.ctl?id=9",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches delete successfully": true
+			},
+			"testPassFailCounts": {
+				"Body matches delete successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"26"
+			],
+			"allTests": [
+				{
+					"Body matches delete successfully": true
+				}
+			],
+			"time": "26",
+			"totalRequestTime": "26",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 5,
+	"totalFail": 0,
+	"totalTime": 211,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "GET Teacher findAll",
+			"id": "06571822-ef3f-491b-b3a4-68eba8225ecb",
+			"url": "http://localhost:8080/teacher.ctl",
+			"time": "2019-11-19T15:22:38.053Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches 博士后": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET Teacher find",
+			"id": "595258b3-f2d3-49ee-945b-5836532b669f",
+			"url": "http://localhost:8080/teacher.ctl?id=1",
+			"time": "2019-11-19T15:22:38.053Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches 博士后": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST Teacher add",
+			"id": "89dff97e-9f11-4183-ac70-6e55ded060fe",
+			"url": "http://localhost:8080/teacher.ctl",
+			"time": "2019-11-19T15:22:38.053Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches add successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PUT Teacher update",
+			"id": "4c225580-3b87-4319-a2bd-f4dfa9013843",
+			"url": "http://localhost:8080/teacher.ctl",
+			"time": "2019-11-19T15:22:38.053Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches update successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE Teacher delete",
+			"id": "aee3f577-1378-4faf-84ae-bc3ce2af4546",
+			"url": "http://localhost:8080/teacher.ctl?id=9",
+			"time": "2019-11-19T15:22:38.053Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches delete successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "76630366-55b1-4b3d-861a-2d89e4ab2aa5",
+		"name": "DepartmentTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Department findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/department.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Department find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/department.ctl?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Department add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"管理系\",\n    \"no\": \"05\",\n    \"id\": 30,\n    \"remarks\": \"\",\n    \"school\": {\n        \"description\": \"信息管理\",\n        \"id\": 1,\n        \"no\": \"02\",\n        \"remarks\": \"best\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/department.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Department update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"土管\",\r\n    \"id\":2,\r\n    \"no\": \"05\",\r\n    \"remarks\": \"\",\r\n        \"school\": {\r\n        \"description\": \"信息管理\",\r\n        \"id\": 1,\r\n        \"no\": \"02\",\r\n        \"remarks\": \"best\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/department.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Department delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"土管\",\r\n    \"id\":14,\r\n    \"no\": \"05\",\r\n    \"remarks\": \"\",\r\n    \"school\": {\r\n        \"description\": \"管理\",\r\n        \"id\": 6,\r\n        \"no\": \"01\",\r\n        \"remarks\": \"TheBest\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/department.ctl?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

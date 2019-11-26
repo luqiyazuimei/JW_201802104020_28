@@ -1,0 +1,308 @@
+{
+	"id": "d7612981-0c69-4619-a34a-cb115297ba15",
+	"name": "DepartmentTest",
+	"allTests": [],
+	"timestamp": "2019-11-19T15:20:37.563Z",
+	"collection_id": "76630366-55b1-4b3d-861a-2d89e4ab2aa5",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "76630366-55b1-4b3d-861a-2d89e4ab2aa5",
+		"name": "DepartmentTest",
+		"order": [
+			"b79ed992-cb6f-4101-87ff-ed5c968e9e2f",
+			"888b34a9-07a1-4511-8f95-7b2da5de76c0",
+			"b97f9a83-fcef-437b-b7c5-6f554cb673ba",
+			"69d64647-5887-4940-bd2b-bcaeceb4cfa4",
+			"8e513e1b-404f-42bc-8a12-09b538f04847"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "GET Department findAll",
+			"id": "b79ed992-cb6f-4101-87ff-ed5c968e9e2f",
+			"url": "http://localhost:8080/department.ctl",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches 信息管理": true
+			},
+			"testPassFailCounts": {
+				"Body matches 信息管理": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"25"
+			],
+			"allTests": [
+				{
+					"Body matches 信息管理": true
+				}
+			],
+			"time": "25",
+			"totalRequestTime": "25",
+			"iterationResults": {}
+		},
+		{
+			"name": "GET Department find",
+			"id": "888b34a9-07a1-4511-8f95-7b2da5de76c0",
+			"url": "http://localhost:8080/department.ctl?id=8",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches 新系": true
+			},
+			"testPassFailCounts": {
+				"Body matches 新系": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"12"
+			],
+			"allTests": [
+				{
+					"Body matches 新系": true
+				}
+			],
+			"time": "12",
+			"totalRequestTime": "12",
+			"iterationResults": {}
+		},
+		{
+			"name": "POST Department add",
+			"id": "b97f9a83-fcef-437b-b7c5-6f554cb673ba",
+			"url": "http://localhost:8080/department.ctl",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches add successfully": false
+			},
+			"testPassFailCounts": {
+				"Body matches add successfully": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"9"
+			],
+			"allTests": [
+				{
+					"Body matches add successfully": false
+				}
+			],
+			"time": "9",
+			"totalRequestTime": "9",
+			"iterationResults": {}
+		},
+		{
+			"name": "PUT Department update",
+			"id": "69d64647-5887-4940-bd2b-bcaeceb4cfa4",
+			"url": "http://localhost:8080/department.ctl",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches update successfully": true
+			},
+			"testPassFailCounts": {
+				"Body matches update successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"110"
+			],
+			"allTests": [
+				{
+					"Body matches update successfully": true
+				}
+			],
+			"time": "110",
+			"totalRequestTime": "110",
+			"iterationResults": {}
+		},
+		{
+			"name": "DELETE Department delete",
+			"id": "8e513e1b-404f-42bc-8a12-09b538f04847",
+			"url": "http://localhost:8080/department.ctl?id=30",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches delete successfully": true
+			},
+			"testPassFailCounts": {
+				"Body matches delete successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"9"
+			],
+			"allTests": [
+				{
+					"Body matches delete successfully": true
+				}
+			],
+			"time": "9",
+			"totalRequestTime": "9",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 1,
+	"totalTime": 165,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "GET Department findAll",
+			"id": "b79ed992-cb6f-4101-87ff-ed5c968e9e2f",
+			"url": "http://localhost:8080/department.ctl",
+			"time": "2019-11-19T15:20:37.563Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches 信息管理": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "GET Department find",
+			"id": "888b34a9-07a1-4511-8f95-7b2da5de76c0",
+			"url": "http://localhost:8080/department.ctl?id=8",
+			"time": "2019-11-19T15:20:37.563Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches 新系": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "POST Department add",
+			"id": "b97f9a83-fcef-437b-b7c5-6f554cb673ba",
+			"url": "http://localhost:8080/department.ctl",
+			"time": "2019-11-19T15:20:37.563Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches add successfully": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "PUT Department update",
+			"id": "69d64647-5887-4940-bd2b-bcaeceb4cfa4",
+			"url": "http://localhost:8080/department.ctl",
+			"time": "2019-11-19T15:20:37.563Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches update successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "DELETE Department delete",
+			"id": "8e513e1b-404f-42bc-8a12-09b538f04847",
+			"url": "http://localhost:8080/department.ctl?id=30",
+			"time": "2019-11-19T15:20:37.563Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches delete successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

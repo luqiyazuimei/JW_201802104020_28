@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "9b29a98a-01f6-48f1-84ab-d362263a03e8",
+		"name": "TeacherTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Teacher findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Teacher find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher.ctl?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Teacher add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"degree\":{\"description\":\"博士后\",\"id\":5,\"no\":\"03\",\"remarks\":\"\"},\"department\":{\"description\":\"信管\",\"id\":2,\"no\":\"02\",\"remarks\":\"best\",\"school\":{\"description\":\"信息管理\",\"id\":1,\"no\":\"02\",\"remarks\":\"best\"}},\"id\":9,\"name\":\"刘峰\",\"title\":{\"description\":\"老师\",\"id\":3,\"no\":\"01\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teacher.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Teacher update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"degree\":{\"description\":\"博士后\",\"id\":5,\"no\":\"03\",\"remarks\":\"\"},\"department\":{\"description\":\"信管\",\"id\":2,\"no\":\"02\",\"remarks\":\"best\",\"school\":{\"description\":\"信息管理\",\"id\":1,\"no\":\"02\",\"remarks\":\"best\"}},\"id\":1,\"name\":\"苏同\",\"title\":{\"description\":\"老师\",\"id\":3,\"no\":\"01\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teacher.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Teacher delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/teacher.ctl?id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
